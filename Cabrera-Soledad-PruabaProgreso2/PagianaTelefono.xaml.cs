@@ -12,7 +12,8 @@ public partial class PagianaTelefono : ContentPage
 	{
 		InitializeComponent();
         BindingContext = this;
-        
+        CargarUltimaRecarga();
+
     }
 
     private void scabrera_buttonRecargar_Clicked(object sender, EventArgs e)
@@ -30,10 +31,24 @@ public partial class PagianaTelefono : ContentPage
         var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SoledadCabrera.txt");
 
         File.WriteAllText(filePath, datos);
-        DisplayAlert("Éxito", "Recarga realizada correctamente.", "OK");
-
-        
+        DisplayAlert("Éxito", "Recarga realizada correctamente.", "Okey");
+        CargarUltimaRecarga();
     }
-    
-    
+    private void CargarUltimaRecarga()
+    {
+        var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SoledadCabrera.txt");
+
+        if (File.Exists(filePath))
+        {
+            UltimaRecarga = File.ReadAllText(filePath);
+        }
+        else
+        {
+            UltimaRecarga = "No hay recargas previas.";
+        }
+
+        OnPropertyChanged(nameof(UltimaRecarga));
+    }
+
+
 }
