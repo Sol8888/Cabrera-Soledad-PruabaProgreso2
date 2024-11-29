@@ -19,10 +19,10 @@
         <BoxView Grid.Row="1" Grid.Column="1" Color="LemonChiffon" />
         <BoxView Grid.Row="0" Grid.Column="0" Color="LightCyan" />
 
-        <Label Text="Daniela" Grid.Row="0" Grid.Column="0" Style="{StaticResource NombreEstilo}" />
-        <Label Text="Cabrera" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoEstilo}" />
+        <Label Text="Daniela" Grid.Row="0" Grid.Column="0" Style="{StaticResource NombreEstilo}" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label Text="Cabrera" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoEstilo}" HorizontalOptions="Center" VerticalOptions="Center" />
 
-        <Label Text="Soledad" Grid.Row="0" Grid.Column="1" Style="{StaticResource NombreEstilo}" />
-        <Label Text="Tapia" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoEstilo}" />
+        <Label Text="Soledad" Grid.Row="0" Grid.Column="1" Style="{StaticResource NombreEstilo}" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label Text="Tapia" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoEstilo}" HorizontalOptions="Center" VerticalOptions="Center"/>
     </Grid>   
 </ContentPage>
