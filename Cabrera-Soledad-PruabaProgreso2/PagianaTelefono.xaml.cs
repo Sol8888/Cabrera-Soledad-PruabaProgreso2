@@ -6,4 +6,9 @@ public partial class PagianaTelefono : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void scabrera_buttonRecargar_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
