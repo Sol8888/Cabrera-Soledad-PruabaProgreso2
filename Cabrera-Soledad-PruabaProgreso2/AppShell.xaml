@@ -8,8 +8,8 @@
     Title="Cabrera_Soledad_PruabaProgreso2">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Teléfono"
+        ContentTemplate="{DataTemplate local:PagianaTelefono}"
+        Route="PagianaTelefono" />
 
 </Shell>
