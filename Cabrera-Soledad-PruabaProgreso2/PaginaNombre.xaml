@@ -20,9 +20,9 @@
         <BoxView Grid.Row="0" Grid.Column="0" Color="LightCyan" />
 
         <Label Text="Daniela" Grid.Row="0" Grid.Column="0" Style="{StaticResource NombreEstilo}" />
-        <Label Text="Cabrera" Grid.Row="0" Grid.Column="1" Style="{StaticResource ApellidoEstilo}" />
+        <Label Text="Cabrera" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoEstilo}" />
 
-        <Label Text="Soledad" Grid.Row="1" Grid.Column="0" Style="{StaticResource NombreEstilo}" />
+        <Label Text="Soledad" Grid.Row="0" Grid.Column="1" Style="{StaticResource NombreEstilo}" />
         <Label Text="Tapia" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoEstilo}" />
     </Grid>   
 </ContentPage>

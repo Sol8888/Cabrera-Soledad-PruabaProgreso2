@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cabrera_Soledad_PruabaProgreso2.PagianaTelefono"
              Title="PagianaTelefono">
+    
     <StackLayout Padding="20" >
         <Label x:Name="scabrera_label1" 
-               Text="Ingrese su información:" 
+               Text="Ingrese su Número Telefónico:" 
                FontSize="Medium" 
                HorizontalOptions="Center" />
         <Entry x:Name="scabrera_entryTelefono" Placeholder="Número Telefónico" Keyboard="Telephone" />
@@ -17,8 +18,21 @@
         <Entry x:Name="scabrera_entryNombre" Placeholder="Nombre" />
         
 
-        <Button x:Name="scabrera_buttonRecargar" Text="Realizar Recarga" Clicked="scabrera_buttonRecargar_Clicked" />
+        <Button x:Name="scabrera_buttonRecargar" 
+                Text="Realizar Recarga" 
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="Medium"
+                CornerRadius="10"
+                Clicked="scabrera_buttonRecargar_Clicked" />
 
-        <Label x:Name="scabrera_labelUltimaRecarga" Text="{Binding UltimaRecarga}" FontSize="Small" HorizontalOptions="Center" VerticalOptions="End" />
+        <Label x:Name="scabrera_labelUltimaRecarga"
+               Text="La última recarga realizada fue:"
+               FontSize="Small"
+               HorizontalOptions="Center"/>
+        <Label Text="{Binding UltimaRecarga}"
+               FontSize="Small"
+               HorizontalOptions="Center" />
+        
     </StackLayout>
 </ContentPage>
