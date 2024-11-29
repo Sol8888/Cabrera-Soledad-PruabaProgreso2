@@ -3,11 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cabrera_Soledad_PruabaProgreso2.PagianaTelefono"
              Title="PagianaTelefono">
-    <StackLayout>
-        <Label x:Name="scabrera_label1" Text="Ingrese su información:" FontSize="Medium" HorizontalOptions="Center" />
-
-        <Entry x:Name="scabrera_entryNombre" Placeholder="Nombre" />
+    <StackLayout Padding="20" >
+        <Label x:Name="scabrera_label1" 
+               Text="Ingrese su información:" 
+               FontSize="Medium" 
+               HorizontalOptions="Center" />
         <Entry x:Name="scabrera_entryTelefono" Placeholder="Número Telefónico" Keyboard="Telephone" />
+
+        <Label x:Name="scabrera_label2"
+               Text="Ingrese el nombre de quien realiza la recarga"
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+        <Entry x:Name="scabrera_entryNombre" Placeholder="Nombre" />
+        
 
         <Button x:Name="scabrera_buttonRecargar" Text="Realizar Recarga" Clicked="scabrera_buttonRecargar_Clicked" />
 
