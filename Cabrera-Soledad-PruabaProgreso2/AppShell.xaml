@@ -7,14 +7,21 @@
     Shell.FlyoutBehavior="Flyout"
     Title="Cabrera_Soledad_PruabaProgreso2">
 
-    <ShellContent
-        Title="Teléfono"
-        ContentTemplate="{DataTemplate local:PagianaTelefono}"
-        Route="PagianaTelefono" />
+    <TabBar>
+        <Tab Title="Recarga Telefónica"
+             Icon="cell.png">
+            <ShellContent
+                Title="Teléfono"
+                ContentTemplate="{DataTemplate local:PagianaTelefono}" />
+        </Tab>
 
-    <ShellContent
-        Title="Nombre"
-        ContentTemplate="{DataTemplate local:PaginaNombre}"
-        Route="PaginaNombre" />
+        <Tab Title="Información Personal"
+             Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Nombre"
+                ContentTemplate="{DataTemplate local:PaginaNombre}" />
+        </Tab>
+    </TabBar>
+
 
 </Shell>
